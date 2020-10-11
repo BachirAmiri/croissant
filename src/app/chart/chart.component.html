@@ -1,0 +1,28 @@
+<div style="margin-top: 50px">
+  <div class="button-groups">
+    <button mat-raised-button color="warn" (click)="theme = undefined">
+      default
+    </button>
+    <button mat-raised-button color="accent" (click)="theme = 'macarons'">
+      pastel
+    </button>
+    <button mat-raised-button color="primary" (click)="theme = 'dark'">
+      dark
+    </button>
+  </div>
+
+  <div
+    echarts
+    [options]="options"
+    [theme]="theme"
+    class="demo-chart"
+    style="margin-top: 20px"
+  ></div>
+
+  <div>
+    <mat-card>
+      <mat-card-title>The winner is</mat-card-title>
+      <p>{{ winner.date }} : {{ winner.name }}</p>
+    </mat-card>
+  </div>
+</div>

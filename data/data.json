@@ -1,0 +1,21 @@
+{
+  "startingDate": "2020-10-16",
+  "data": [
+    {
+      "id": 0,
+      "name": "Leo"
+    },
+    {
+      "id": 1,
+      "name": "Cola"
+    },
+    {
+      "id": 2,
+      "name": "Donald"
+    },
+    {
+      "id": 3,
+      "name": "Joe"
+    }
+  ]
+}
