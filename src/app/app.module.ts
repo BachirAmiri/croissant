@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card'
+import { MatIconModule } from '@angular/material/icon'
 import { ChartComponent } from './chart/chart.component';
 import * as echarts from 'echarts';
 import { NgxEchartsModule } from 'ngx-echarts';
@@ -23,6 +24,7 @@ import { NextComponent } from './next/next.component';
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
+    MatIconModule,
     NgxEchartsModule.forRoot({ echarts }),
     MatToolbarModule,
   ],

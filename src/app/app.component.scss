@@ -1,0 +1,17 @@
+::ng-deep .mat-tab-label {
+    min-width: 25px !important;
+    padding: 5px;
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+  }
+
+.container {
+    background-color: white; 
+    height: 100vh; 
+    text-align: center
+}
+
+.mat-toolbar span {
+    margin-left: auto; margin-right: auto
+}

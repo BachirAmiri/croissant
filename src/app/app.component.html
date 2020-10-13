@@ -1,8 +1,13 @@
-<div style="background-color: white; height: 100%; text-align: center">
+<div class="container">
   <mat-toolbar>
-    <span style="margin-left: auto; margin-right: auto"
-      >Croissant App &#9749;</span
+    <span>Croissant App &#9749;</span>
+    <button
+      mat-icon-button
+      aria-label="Source code"
+      onclick="window.location.href='https://github.com/BachirAmiri/croissant';"
     >
+      <mat-icon>code</mat-icon>
+    </button>
   </mat-toolbar>
 
   <mat-tab-group mat-align-tabs="center" style="color: black">
@@ -14,13 +19,3 @@
     </mat-tab>
   </mat-tab-group>
 </div>
-
-<style>
-  ::ng-deep .mat-tab-label {
-    min-width: 25px !important;
-    padding: 5px;
-    background-color: transparent;
-    color: black;
-    font-weight: 700;
-  }
-</style>
