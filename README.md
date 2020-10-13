@@ -6,10 +6,11 @@ Pour l'instant c'est un site statique
 
 ## TODO 
 
-* [ ] CSS
-* [ ] Ajouter un onglet next
+* [x] Mise à jour CSS
+* [ ] Ajouter un onglet "Next"
+    * [ ] Affichage des prochaines semaines
 * [ ] Global theme switch
-* [ ] About
+* [ ] Onglet "A propos"
 
 
 ## Packages
