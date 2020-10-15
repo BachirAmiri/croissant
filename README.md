@@ -7,8 +7,10 @@ Pour l'instant c'est un site statique, du coup il se base sur le fichier data.js
 ## TODO 
 
 * [x] Mise à jour CSS
+    * [ ] Adapter aux très petits écrans
 * [ ] Ajouter un onglet "Next"
     * [ ] Affichage des prochaines semaines
+    * [ ] Angular timeline
 * [ ] Global theme switch
 * [ ] Onglet "A propos"
 * [ ] PWA
