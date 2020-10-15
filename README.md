@@ -2,7 +2,7 @@
 
 Projet pour savoir qui ramenène le petit dej vendredi prochain. 
 
-Pour l'instant c'est un site statique 
+Pour l'instant c'est un site statique, du coup il se base sur le fichier data.json qui conserve la liste des participants , ainsi qu'une date de début, ensuite de façon cyclique, le programme va calculer le prochain par rapport a sa position par rapport a la date de départ.
 
 ## TODO 
 
@@ -11,6 +11,7 @@ Pour l'instant c'est un site statique
     * [ ] Affichage des prochaines semaines
 * [ ] Global theme switch
 * [ ] Onglet "A propos"
+* [ ] PWA
 
 
 ## Packages
@@ -24,3 +25,9 @@ Pour l'instant c'est un site statique
 * [Day.js](https://day.js.org/en/)
 
 * Upcoming:  [Angular Calendar](https://angular-calendar.com/docs/)
+
+## IDEAS 
+
+Possiblement pour le stockage, des approches compatibles avec github pages sont possibles : 
+* [GSheet](https://dev.to/hacubu/how-to-use-google-sheets-as-a-database-responsibly-3ohk)
+* [Git Database](https://docs.github.com/en/free-pro-team@latest/rest/reference/git)
