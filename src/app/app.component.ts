@@ -10,7 +10,7 @@ import dayjs from 'dayjs';
 export class AppComponent implements OnInit {
   title = 'croissant';
   data: any;
-  winner: any;
+  winner: any = { name: 'unknown', date: 'unknown' };
 
   ngOnInit() {
     this.data = this.getData();
@@ -20,43 +20,42 @@ export class AppComponent implements OnInit {
     let list = file.data;
     let returnList = [];
 
-    list.forEach((person) => {
+    list.forEach((person, index) => {
       returnList.push({
         name: person.name,
-        value: this.getPersonValue(person),
+        value: this.getPersonValue(person, index),
       });
     });
 
     return returnList;
   }
 
-  getPersonValue(person: any) {
+  getPersonValue(person: any, index: number) {
     let startingDate: Date = new Date(file.startingDate);
     const count = file.data.length;
 
-    if (this.isPersonTurn(startingDate, person)) {
+    if (this.isPersonTurn(startingDate, person, index)) {
       return 15;
     }
 
     return 10;
   }
 
-  isPersonTurn(date: Date, person: any) {
-    let position: number = person.id;
+  isPersonTurn(date: Date, person: any, position: number) {
     const max: number = file.data.length;
     const count: number = Math.round(53 / max);
-    console.log(person.name);
-    console.log(count);
 
     for (var i = 0; i < count; i++) {
       const tmp = i * max;
-      console.log(this.addWeeks(date, position + tmp).format('DD/MM/YYYY'));
+      const next = this.addWeeks(date, position + tmp)
+      
+      //console.log(next.format('DD/MM/YYYY'));
       if (
-        this.nextFriday().isSame(this.addWeeks(date, position + tmp), 'week')
+        this.nextFriday().isSame(next, 'week')
       ) {
         this.winner = {
           name: person.name,
-          date: this.addWeeks(date, position + tmp).format('DD/MM/YYYY')
+          date: next,
         };
         return true;
       }
