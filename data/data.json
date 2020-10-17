@@ -1,61 +1,47 @@
 {
-  "startingDate": "2020-10-16",
+  "startingDate": "2020-10-23",
   "data": [
     {
-      "id": 0,
-      "name": "Bachir"
-    },
-    {
-      "id": 1,
-      "name": "Stéphanie"
-    },
-    {
-      "id": 2,
-      "name": "Sassi"
-    },
-    {
-      "id": 3,
       "name": "Olivia"
     },
     {
-      "id": 4,
       "name": "Cyrille"
     },
     {
-      "id": 5,
       "name": "Brahim"
     },
     {
-      "id": 6,
       "name": "Younes"
     },
     {
-      "id": 7,
       "name": "Sebastien"
     },
     {
-      "id": 8,
       "name": "Saint-Paul"
     },
     {
-      "id": 9,
       "name": "Lucas"
     },
     {
-      "id": 10,
       "name": "Agnès"
     },
     {
-      "id": 11,
       "name": "Julian"
     },
     {
-      "id": 12,
       "name": "Amayas"
     },
     {
-      "id": 13,
       "name": "Quentin"
-    }
+    },
+    {
+      "name": "Bachir"
+    },
+    {
+      "name": "Stéphanie"
+    },
+    {
+      "name": "Sassi"
+    } 
   ]
 }
