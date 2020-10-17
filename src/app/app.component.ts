@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
       ) {
         this.winner = {
           name: person.name,
-          date: next,
+          date: next.format('DD/MM/YYYY'),
         };
         return true;
       }
